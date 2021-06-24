@@ -1,0 +1,113 @@
+.flex {
+    display: flex;
+}
+.item_center {
+    display: flex;
+    place-items: center;
+}
+
+.header_row {
+    background-color: black;
+}
+
+.logo_image {
+    padding: 10px 0;
+}
+.page_header_row {
+    border-bottom: 5px solid #ebebeb;
+}
+.page_header_text {
+    color: gray;
+    padding: 10px 0;
+}
+.content_col {
+    background-color: #f6f6f6;
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+.package_stages {
+    display: flex;
+    justify-content: space-between;
+}
+.trans_pacific_stage {
+    background-color: #b8b8b8;
+    color: white;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* .box {
+    display:inline-block;
+    padding:10px;
+    margin-right:60px;
+    border:1px solid;
+    border-right:none;
+    position:relative;
+  }
+  .box:before,
+  .box:after{
+    content:"";
+    position:absolute;
+    margin-left:-1px;
+    top:-1px;
+    left:100%;
+    bottom:50%;
+    width:30px;
+    background:linear-gradient(to right,#000 28%,transparent 29%) 1px 0/25% 100%;
+    transform:skewX(45deg);
+    transform-origin:top;
+  }
+  .box:after {
+    transform:skewX(-45deg);
+    transform-origin:bottom;
+    bottom:-1px;
+    top:50%;
+  } */
+
+.package_stage_icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+}
+.ship_icon, .plane_icon {
+    font-size: 4em;
+    color: gray;
+}
+.chevron_pack {
+    display: flex;
+    place-items: center;
+    margin: 0 1rem;
+    font-size: 1.5em;
+    color:darkgray;
+}
+.chevron_pack .fas:nth-child(2){
+    color: gray;
+}
+input {
+    min-width: 350px;
+    max-width: 40%;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.footer_row {
+    background-color: #eeeeee;
+}
+.footer_row .chevron_pack {
+    font-size: 0.7em;
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+.footer_row .chevron_pack .fas:nth-child(2) {
+    color: darkgray;
+}
+.fb_icon, .instagram_icon {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40px;
+    text-align: center;
+}
