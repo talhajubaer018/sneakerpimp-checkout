@@ -5,6 +5,10 @@
     display: flex;
     place-items: center;
 }
+.space_between {
+    display: flex;
+    justify-content: space-between;
+}
 
 .header_row {
     background-color: black;
@@ -27,14 +31,25 @@
 }
 .package_stages {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-.trans_pacific_stage {
+.trans_pacific_stage, .inter_asia_stage_one,
+.inter_asia_stage_two, .arrived_in_bangladesh {
     background-color: #b8b8b8;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    border-right: 2px solid white;
+}
+.inter_asia_stage_one, .inter_asia_stage_two {
+    border-radius: 0;
+}
+.arrived_in_bangladesh {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 /* .box {
@@ -67,7 +82,7 @@
 
 .package_stage_icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 4rem 0;
 }
 .ship_icon, .plane_icon {
@@ -84,6 +99,9 @@
 .chevron_pack .fas:nth-child(2){
     color: gray;
 }
+.bangladesh_image {
+    width: 50px;
+}
 input {
     min-width: 350px;
     max-width: 40%;
@@ -94,6 +112,7 @@ input {
 }
 .footer_row {
     background-color: #eeeeee;
+    padding: 1.5rem;
 }
 .footer_row .chevron_pack {
     font-size: 0.7em;
@@ -110,4 +129,12 @@ input {
     border-radius: 5px;
     width: 40px;
     text-align: center;
+}
+.payment_icons {
+    font-size: 1.6em;
+}
+.copyright_row {
+    background-color: #eeeeee;
+    padding: 1.5rem;
+    border-top: 1px solid white;
 }
