@@ -9,6 +9,9 @@
     display: flex;
     justify-content: space-between;
 }
+.p-0 {
+    padding: 0;
+}
 
 .header_row {
     background-color: black;
@@ -138,3 +141,59 @@ input {
     padding: 1.5rem;
     border-top: 1px solid white;
 }
+.copyright_text {
+    display: flex;
+    justify-content: space-between;
+}
+.developed_text {
+    text-align: right;
+}
+
+
+/* mobile view */
+
+@media only screen and (max-width: 600px) {
+    .package_stages {
+        flex-direction: column;
+    }
+    .package_stages .item_center {
+        justify-content: center;
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+    .trans_pacific_stage, .inter_asia_stage_one,
+    .inter_asia_stage_two, .arrived_in_bangladesh {
+        border-radius: 0;
+    }
+    .package_stage_icons {
+        place-items: center;
+        margin: 2rem 0;
+    }
+    .ship_icon, .plane_icon {
+        font-size: 2em;
+        color: gray;
+    }
+    .chevron_pack {
+        font-size: 1em;
+    }
+    .bangladesh_image {
+        width: 30px;
+    }
+    .footer_row {
+        padding: 1rem;
+    }
+
+
+
+
+    .copyright_row {
+        padding: 1rem 0;
+    }
+    .copyright_text {
+        flex-direction: column;
+        place-items: center;
+    }
+    .developed_text {
+        text-align: center;
+    }
+  }
