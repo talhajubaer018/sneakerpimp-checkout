@@ -185,7 +185,7 @@ input {
     }
     .ship_icon, .plane_icon {
         font-size: 2em;
-        color: gray;
+        color: rgb(128, 128, 128);
     }
     .chevron_pack {
         font-size: 1em;
